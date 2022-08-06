@@ -29,7 +29,7 @@ const PasswordReset = () => {
       const { data } = await axios.post(url, { password });
       setMsg(data.message);
       setError("");
-      window.location = "/login";
+      window.location = "/";
     } catch (error) {
       if (
         error.response &&
